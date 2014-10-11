@@ -22,4 +22,11 @@ define([
         'core':
           'data': JSON.parse(@model.get('tree'))
       )
+    events:
+      'select_node.jstree #tree': 'handleSelection'
+
+    handleSelection: (event, data)->
+      selection = data.node.original
+      if selection.is_file
+        # mediator.trigger('tree.selection', @model, selection)
 )
