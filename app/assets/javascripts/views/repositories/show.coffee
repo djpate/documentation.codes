@@ -27,6 +27,6 @@ define([
 
     handleSelection: (event, data)->
       selection = data.node.original
-      if selection.is_file
+      #if selection.is_file
         # mediator.trigger('tree.selection', @model, selection)
 )
