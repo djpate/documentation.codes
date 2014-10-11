@@ -3,7 +3,7 @@ define([
   'jquery',
   'underscore',
   'backbone',
-  'text!templates/repositories/list.html'
+  'text!templates/repositories/index.html'
   'handlebars'
 ], (factory, $, _, Backbone, template, Handlebars)->
   factory.extend 'View', 'RepositoriesIndex.View',

@@ -6,8 +6,9 @@ require.config(
     bootstrap: 'bootstrap/dist/js/bootstrap'
     Factory: 'factoryjs/dist/Factory'
     factory: 'factoryjs/dist/BackboneFactory'
-    text : "requirejs-text/text"
-    handlebars : "handlebars/handlebars"
+    text : 'requirejs-text/text'
+    handlebars : 'handlebars/handlebars'
+    jstree: 'jstree/dist/jstree'
 )
 
 require([

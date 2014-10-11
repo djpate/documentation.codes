@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   resource :oauth, :only => [:new] do
     get "callback"
   end
-  resources :repositories, :only => [:index, :show]
-  get "/repositories/:id/:filename", :controller => :repositories, :action => :filename, :constraints => {filename: /[^\/]+/}
+  resources :repositories, :only => :index
+  get "/repositories/:owner/:name", :action => "show", :controller => "repositories"
 end

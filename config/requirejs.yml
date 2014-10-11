@@ -7,3 +7,4 @@ paths:
   factory: 'factoryjs/dist/BackboneFactory'
   text : "requirejs-text/text"
   handlebars : "handlebars/handlebars"
+  jstree: 'jstree/dist/jstree'

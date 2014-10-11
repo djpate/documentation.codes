@@ -7,7 +7,7 @@ define([
 ], (factory, $, _, Backbone)->
   
   factory.extend 'Collection', 'Repositories.Collection',
-    model: 'RepositoryModel',
+    model: 'Repository.Model',
     url: '/repositories.json'
 
 )

@@ -6,6 +6,7 @@
     "bootstrap": "latest",
     "backbone": "latest",
     "factoryjs": "latest",
-    "handlebars": "latest"
+    "handlebars": "latest",
+    "jstree": "latest"
   }
 }

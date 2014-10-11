@@ -3,6 +3,7 @@ class Views::Layouts::Base < Erector::Widget
   def content
     html do
       head do
+        meta :name => "viewport", :content => "width=device-width, initial-scale=1.0"
         title "CodeGenius"
         stylesheet_link_tag    'application', media: 'all'
         javascript_include_tag 'requirejs/require.js', :'data-main' => asset_path("application.js")
@@ -10,10 +11,8 @@ class Views::Layouts::Base < Erector::Widget
         extra_head
       end
       body do
-        div.container do
-          header_content
-          body_content
-        end
+        header_content
+        body_content
       end
     end
   end

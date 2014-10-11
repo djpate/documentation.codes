@@ -9,6 +9,8 @@ class RepositoriesController < ApplicationController
   end
 
   def show
+    #return render :json => @repository
+    respond_with @repository
   end
 
   def filename
@@ -19,8 +21,7 @@ class RepositoriesController < ApplicationController
   private
 
   def set_repo
-    repo_data = params[:id].split('/')
-    @repo = Git::Repo.new(@github, repo_data[0], repo_data[1])
+    @repository = Git::Repo.new(@github, params[:owner], params[:name])
   end
 
 end
