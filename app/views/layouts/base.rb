@@ -5,7 +5,7 @@ class Views::Layouts::Base < Erector::Widget
       head do
         title "CodeGenius"
         stylesheet_link_tag    'application', media: 'all'
-        javascript_include_tag 'requirejs/require.js', :'data-main' => "assets/app"
+        javascript_include_tag 'requirejs/require.js', :'data-main' => "assets/application"
         csrf_meta_tags
         extra_head
       end
