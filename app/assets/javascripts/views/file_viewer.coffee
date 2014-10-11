@@ -1,7 +1,7 @@
 jQuery ->
-  
-  class window.FileViewerView extends Backbone.View
-  
+
+  class window.App.FileViewerView extends Backbone.View
+
     initialize: ->
       mediator.on('tree.selection', @handleSelection, @)
 

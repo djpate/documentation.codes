@@ -1,6 +1,7 @@
 {
   "name": "dsl-generated dependencies",
   "dependencies": {
+    "requirejs": "latest",
     "bootstrap": "latest",
     "backbone": "latest"
   }

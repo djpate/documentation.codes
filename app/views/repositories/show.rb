@@ -12,8 +12,4 @@ class Views::Repositories::Show < Views::Layouts::Base
       end
     end
   end
-
-  def extra_head
-    javascript_include_tag 'repositories/show'
-  end
 end

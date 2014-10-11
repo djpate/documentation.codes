@@ -1,15 +1,15 @@
 //= require jsTree/jstree.min
 jQuery ->
-  
-  class window.RepositoryTreeView extends Backbone.View
-  
+
+  class window.App.RepositoryTreeView extends Backbone.View
+
     initialize: ->
       tree = @$el.jstree({
         core: {
           data: @model.get('json')
         }
       })
-    
+
     events:
       'select_node.jstree': 'handleSelection'
 
