@@ -4,12 +4,19 @@ require.config(
     underscore: 'underscore/underscore'
     backbone: 'backbone/backbone'
     bootstrap: 'bootstrap/dist/js/bootstrap'
+    Factory: 'factoryjs/dist/Factory'
+    factory: 'factoryjs/dist/BackboneFactory'
+    text : "requirejs-text/text"
+    handlebars : "handlebars/handlebars"
 )
 
 require([
+  'factory'
   'router',
-], (Router) ->
-  window.Mediator = _.extend({}, Backbone.Events)
-  window.router = new Router
+], (factory, Router) ->
+  # window.Mediator = _.extend({}, Backbone.Events)
+  # window.backbone.router = new Router
+  # Backbone.history.start()
+  factory.get('App.Router')
   Backbone.history.start()
 )

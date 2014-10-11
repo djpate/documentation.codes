@@ -25,7 +25,14 @@ class Views::Layouts::Base < Erector::Widget
           nav :class => "navbar navbar-default", :role => "navigation" do
             div :class => "container-fluid" do
               div :class => "navbar-header" do
-                a "Documentation.codes", :class => "navbar-brand", :href => "#foo"
+                a "Documentation.codes", :class => "navbar-brand", :href => "/"
+              end
+              div :class => "collapse navbar-collapse" do
+                ul :class => "nav navbar-nav" do
+                  li :class => "active" do
+                    a "Repositories", :href=>"#repositories"
+                  end
+                end
               end
             end
           end
@@ -35,7 +42,7 @@ class Views::Layouts::Base < Erector::Widget
   end
 
   def body_content
-    raise NotImplementedError, "You need to define body_content!"
+    div.row :id => :main_content
   end
 
   def extra_head
