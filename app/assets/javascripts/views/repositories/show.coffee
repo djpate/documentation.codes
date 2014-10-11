@@ -14,14 +14,15 @@ define([
           @render()
       )
     render: ->
-      template = Handlebars.compile(template)
-      @$el.html(template(@model.toJSON()))
+      compiled_template = Handlebars.compile(template)
+      @$el.html(compiled_template(@model.toJSON()))
       @loadTree()
     loadTree: ->
       @$('#tree').jstree(
         'core':
           'data': JSON.parse(@model.get('tree'))
       )
+      
     events:
       'select_node.jstree #tree': 'handleSelection'
 

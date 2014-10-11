@@ -13,6 +13,6 @@ define([
           @render()
       )
     render: ->
-      template = Handlebars.compile(template);
-      @$el.html(template({repositories: @collection.toJSON()}));
+      compiled_template = Handlebars.compile(template);
+      @$el.html(compiled_template({repositories: @collection.toJSON()}));
 )
