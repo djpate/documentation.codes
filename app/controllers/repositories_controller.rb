@@ -1,11 +1,11 @@
 class RepositoriesController < ApplicationController
   
-  respond_to :json, :html
+  respond_to :json
 
   before_action :set_repo, :only => [:show, :filename]
 
   def index
-    @repos = @github.repos.all.map(&:full_name)
+    @repositories = @github.repos.all
   end
 
   def show

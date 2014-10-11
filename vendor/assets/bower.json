@@ -2,7 +2,10 @@
   "name": "dsl-generated dependencies",
   "dependencies": {
     "requirejs": "latest",
+    "requirejs-text": "latest",
     "bootstrap": "latest",
-    "backbone": "latest"
+    "backbone": "latest",
+    "factoryjs": "latest",
+    "handlebars": "latest"
   }
 }

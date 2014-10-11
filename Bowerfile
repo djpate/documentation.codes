@@ -2,5 +2,8 @@
 # Check out https://github.com/42dev/bower-rails#ruby-dsl-configuration for more options
 
 asset "requirejs"
+asset "requirejs-text"
 asset "bootstrap"
 asset "backbone"
+asset "factoryjs"
+asset "handlebars"

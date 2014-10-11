@@ -1,15 +1,18 @@
 define([
+  'factory'
   'jquery',
   'underscore',
   'backbone'
-], ($, _, Backbone)->
+  'views/repositories/index'
+  'collections/repositories'
+], (factory, $, _, Backbone)->
 
-    return class Router extends Backbone.Router
-
+    factory.extend 'Router', 'App.Router',
+      
       routes:
-        'foo': 'repositories_index'
-
-      repositories_index: ->
-        console.log('index')
+        'repositories': 'index_repositories'
+      
+      index_repositories: ->
+        factory.get('RepositoriesIndex.View', {collection: 'Repositories.Collection',el: '#main_content'})
 
 )
