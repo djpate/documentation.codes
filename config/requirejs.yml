@@ -1,0 +1,9 @@
+paths:
+  jquery: 'jquery/dist/jquery'
+  underscore: 'underscore/underscore'
+  backbone: 'backbone/backbone'
+  bootstrap: 'bootstrap/dist/js/bootstrap'
+  Factory: 'factoryjs/dist/Factory'
+  factory: 'factoryjs/dist/BackboneFactory'
+  text : "requirejs-text/text"
+  handlebars : "handlebars/handlebars"
